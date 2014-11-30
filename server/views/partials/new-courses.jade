@@ -1,0 +1,8 @@
+//
+   Created by jeanpokou on 14-11-30.
+
+.panel.panel-primary
+   .panel-heading.text-center New Courses
+   .panel-body
+      .row(ng-repeat="course in courses | orderBy:'featured':false ")
+         .col-md-6 {{ course.name  | date:'MMMM d'}}

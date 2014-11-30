@@ -54,12 +54,14 @@ db.once('open',function callback(){
 });
 
 //======================  mongoose Schema
+/*
 var messageSchema=mongoose.Schema({message:String});
 var Message=mongoose.model('message',messageSchema);  // mongo model
 var mongoMessage;
 Message.findOne().exec(function(err , messageDoc){
 	mongoMessage= messageDoc.message;
 });
+*/
 
 
 //====================== routing for partial
@@ -69,9 +71,7 @@ app.get('/partials/:partialPath',function(req,res){
 
 //====================== handle all  request with server Index
 app.get('*',function(req,res){
-		res.render('index',{
-			message:mongoMessage
-		});
+		res.render('index');
 });
 
 //====================== server port

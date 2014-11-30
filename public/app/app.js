@@ -4,9 +4,6 @@ angular.module('app').config(function($routeProvider,$locationProvider){
 });
 	$routeProvider
 		.when('/', {
-			templateUrl:"/partials/main",controller:'mainCtrl'})
+			templateUrl:"/partials/main",controller:'mvMainCtrl'})
 });
 
-angular.module('app').controller('mainCtrl',function($scope){
-	$scope.myVar="hello Jean Marc";
-});
