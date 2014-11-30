@@ -9,4 +9,4 @@ angular.module('app').config(function($routeProvider,$locationProvider){
 
 angular.module('app').controller('mainCtrl',function($scope){
 	$scope.myVar="hello Jean Marc";
-})
+});
